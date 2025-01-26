@@ -1,0 +1,22 @@
+/* Hide default scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b, #86e1d8, #42a5f5, #7e57c2);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #ff6b6b, #feb47b, #7be495, #42a5f5, #7e57c2);
+  }
+  

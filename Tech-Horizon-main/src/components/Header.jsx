@@ -1,0 +1,40 @@
+import React from 'react';
+import { Button } from './Button.jsx';
+import hack from './hack.png'; // Update the path as per your directory structure
+
+export const Header = () => {
+  return (
+    <header className="py-4 border-b border-white/15 md:border-none sticky top-0 z-10">
+      <div className="absolute inset-0 backdrop-blur -z-10 md:hidden"></div>
+      <div className="container" style={{ display: 'contents' }}>
+        <div className="flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl md:max-w-2xl mx-auto relative">
+          <div className="absolute inset-0 backdrop-blur -z-10 hidden md:block"></div>
+          <div>
+            <div className="border h-10 w-10 rounded-lg inline-flex justify-center items-center border-white/15">
+              <img src={hack} alt="Logo" className="h-10 w-40 rounded-lg" />
+            </div>
+          </div>
+          <div className="hidden md:block">
+            <nav className="flex gap-8 text-sm">
+              <a href="#" className="text-white/70 hover:text-white transition">
+                Features
+              </a>
+              <a href="#" className="text-white/70 hover:text-white transition">
+                Developers
+              </a>
+              <a href="#" className="text-white/70 hover:text-white transition">
+                Pricing
+              </a>
+              <a href="#" className="text-white/70 hover:text-white transition">
+                Changelog
+              </a>
+            </nav>
+          </div>
+          <div className="flex gap-4 items-center">
+            <Button>Join waitlist</Button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
