@@ -9,7 +9,7 @@ const Experience = lazy(() => import('./components/Experience'));
 const Heroo = lazy(() => import('./components/Heroo'));
 const Navbar = lazy(() => import('./components/Navbar'));
 const Works = lazy(() => import('./components/Works'));
-// const Footer = lazy(() => import('./components/Footer'));
+const Footer = lazy(() => import('./components/Footer'));
 const Guidelines = lazy(() => import('./components/Guidelines'));
 const Support = lazy(() => import('./components/Support'));
 const StarsCanvas = lazy(() => import('./components/StarBackground'));
@@ -59,7 +59,7 @@ const App = () => {
           </div>
           <StarsCanvas />
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </Suspense>
     </BrowserRouter>
   );
